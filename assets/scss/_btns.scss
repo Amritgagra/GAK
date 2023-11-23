@@ -1,0 +1,42 @@
+@import './variables';
+
+.btn__accent {
+    border:1px solid $clr-accent;
+    color: $clr-white;
+    background: $clr-accent;
+    border-radius: 9px;
+    padding: 7px 22px;
+    font-weight: 600 !important;
+    &:hover,
+    &:focus {
+        background: transparent !important;
+        color: $clr-accent !important;
+        border:1px solid $clr-accent !important;
+    }
+}
+.btn__outline-white {
+    border:1px solid $clr-gray-500;
+    color: $clr-gray-500;
+    border-radius: 9px;
+    padding: 7px 22px;
+    font-weight: 600 !important;
+    &:hover,
+    &:focus {
+        background: transparent !important;
+        color: $clr-accent !important;
+        border:1px solid $clr-accent !important;
+    }
+}
+.btn__outline-black {
+    border:1px solid $clr-black;
+    color: $clr-black;
+    border-radius: 9px;
+    padding: 7px 22px;
+    font-weight: 600 !important;
+    &:hover,
+    &:focus {
+        background: transparent !important;
+        color: $clr-accent !important;
+        border:1px solid $clr-accent !important;
+    }
+}
