@@ -1,1 +1,6 @@
-/*# sourceMappingURL=contact.css.map */
+@media screen and (max-width: 576px) {
+  .contact lottie-player {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}/*# sourceMappingURL=contact.css.map */

@@ -110,18 +110,33 @@ ul {
 .ps-70 {
     padding-left: 70px;
     @include mq(lg) {
+        padding-left: 35px;
+    }
+    @include mq(sm) {
         padding-left: 0px;
     }
 }
 .pt-35 {
     padding-top: 35px;
+    @include mq(sm) {
+        padding-top: 20px;
+    }
 }
 .pe-30 {
     padding-right:30px;
+    @include mq(lg) {
+        padding-right:15px;
+    }
+    @include mq(sm) {
+        padding-right:0px;
+    }
 }
 .ms-70 {
     margin-left: 70px;
     @include mq(lg) {
+        margin-left: 35px;
+    }
+    @include mq(sm) {
         margin-left: 0px;
     }
 }
@@ -148,45 +163,38 @@ ul {
 }
 .pb-270 {
     padding-bottom: 270px;
+    @include mq(lg){
+        padding-bottom: 100px;
+    }
 }
 .pb-115 {
     padding-bottom: 115px;
 }
 .pb-150 {
     padding-bottom: 150px;
+    @include mq(md){
+        padding-bottom: 80px;
+    }
+    @include mq(sm){
+        padding-bottom: 20px;
+    }
 }
 .mx-30 {
     margin-inline: 30px;
-}
-.full-width {
-    @include mq(sm){
-        width: 100%;
+    @include mq(sm) {
+        margin-inline: 0px;
     }
 }
 
-.border-b-sm-0 {
-    @include mq(sm){
-        border-bottom: 0 !important;
-    }
-}
 
 .section__content {
     &--sm {
         max-width: 433px;
+        @include mq(lg){
+           max-width: 100%;
+           text-align: center;
+        }
     }
-}
-
-
-
-@keyframes mouseScroll {
- 0% {
-  -webkit-transform:translateY(0);
-  transform:translateY(0)
- }
- 100% {
-  -webkit-transform:translateY(14px);
-  transform:translateY(14px)
- }
 }
 
 .cap__icon {
@@ -216,7 +224,12 @@ ul {
 .resource {
     padding-block:275px 250px;
     background: url(../images/bg__gradient-top.png) no-repeat center/cover;
-
+    @include mq(lg) {
+        padding-block:250px 150px;
+    }
+    @include mq(sm) {
+        padding-block: 100px;
+    }
     &__text {
         div {
             position: relative;
@@ -230,7 +243,13 @@ ul {
                 overflow:hidden;
                 text-align: center;
               }
-        }
+
+            }
+            br {
+              @include mq(xxxl) {
+                  display: none;
+              }
+            }
     }
 }
 
@@ -243,6 +262,21 @@ ul {
             justify-content: space-between;
             margin: 0 auto;
             margin-bottom: 85px;
+            @include mq(lg) {
+                margin-bottom: 30px;
+                gap: 10px;
+            }
+            .nav-item  {
+                @include mq(xxl) {
+                    flex-basis: 100%;
+                    display: flex;
+                    justify-content: center;
+                }
+                @include mq(sm) {
+                    flex-basis: initial;
+                    display: block;
+                }
+            }
         .nav-link {
             border: 0;
             border-bottom: 1px solid $clr-dark;
@@ -252,6 +286,16 @@ ul {
             font-weight: 500;
             font-family: 'Montserrat', sans-serif;
             min-width: 400px;
+            @include mq(xxl) {
+                min-width: auto;
+            }
+            @include mq(lg) {
+                font-size: 16px;
+                line-height: 24px;
+            }
+            @include mq(sm) {
+             padding-inline:0 ;
+            }
             &.active {
                 background: transparent;
                 font-weight: 600;
@@ -265,6 +309,12 @@ ul {
         width: 100%;
         justify-content: space-between;
         margin: 0 auto;
+            lottie-player {
+                @include mq(sm) {
+                    width: 100% !important;
+                    height: 190px !important;
+                }
+            }
     }
 }
 
@@ -275,6 +325,9 @@ ul {
     &__title {
         line-height: 55px;
         margin-bottom: 25px;
+        @include mq(sm) {
+            line-height: 40px;
+        }
     }
     &__text {
         margin-bottom: 40px;
