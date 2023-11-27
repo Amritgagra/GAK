@@ -4,6 +4,9 @@
   position: relative;
   z-index: 2;
 }
+.banner--md {
+  min-height: 560px;
+}
 .banner::after {
   content: "";
   position: absolute;

@@ -195,6 +195,12 @@ ul {
            text-align: center;
         }
     }
+    &--md {
+        max-width: 714px;
+        @include mq(lg){
+           max-width: 100%;
+        }
+    }
 }
 
 .cap__icon {
@@ -273,7 +279,7 @@ ul {
                     justify-content: center;
                 }
                 @include mq(sm) {
-                    flex-basis: initial;
+                    // flex-basis: initial;
                     display: block;
                 }
             }
@@ -288,13 +294,16 @@ ul {
             min-width: 400px;
             @include mq(xxl) {
                 min-width: auto;
+                width: 100%;
             }
             @include mq(lg) {
                 font-size: 16px;
                 line-height: 24px;
             }
             @include mq(sm) {
-             padding-inline:0 ;
+                padding-inline: 0;
+                text-wrap: nowrap;
+                width: 100%;
             }
             &.active {
                 background: transparent;
@@ -326,7 +335,7 @@ ul {
         line-height: 55px;
         margin-bottom: 25px;
         @include mq(sm) {
-            line-height: 40px;
+            line-height: 35px;
         }
     }
     &__text {

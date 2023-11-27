@@ -5,6 +5,9 @@
     background-size: cover;
     position: relative;
     z-index: 2;
+    &--md {
+        min-height: 560px;
+    }
     &::after {
         content: '';
         position: absolute;
