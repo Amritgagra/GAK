@@ -329,6 +329,12 @@ ul {
 
 .recycling {
     padding-top: 126px;
+    &__img {
+        @include mq(sm) {
+          min-height: 300px;
+          object-fit: cover;
+        }
+    }
 }
 .contact {
     &__title {

@@ -527,6 +527,13 @@ ul {
 .recycling {
   padding-top: 126px;
 }
+@media screen and (max-width: 576px) {
+  .recycling__img {
+    min-height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
 
 .contact__title {
   line-height: 55px;
