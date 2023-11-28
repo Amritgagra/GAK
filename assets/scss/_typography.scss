@@ -1,19 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import './variables';
 @import './mixins';
-body{
-    background:$clr-accent-light;
+
+body {
+    background: $clr-accent-light;
     color: $clr-dark;
     font-size: 20px;
     font-weight: 400;
     line-height: 25px;
     font-family: 'Quicksand', sans-serif;
-    @include mq(lg){
+
+    @include mq(lg) {
         font-size: 18px;
         line-height: 25px;
     }
 }
-h1,h2,h3,h4,h5,h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -23,43 +32,80 @@ h1 {
     margin-bottom: 40px;
     text-transform: uppercase;
     color: $clr-accent-light;
-  
-    @include mq(md){
+
+    @include mq(md) {
         font-size: 32px;
         line-height: 40px;
     }
-    @include mq(sm){
+
+    @include mq(sm) {
         font-size: 26px;
         line-height: 40px;
         margin-bottom: 20px;
     }
 }
 
-h2{
+h2 {
     font-size: 45px;
     line-height: 73px;
     font-weight: 600;
     margin-bottom: 40px;
     text-transform: uppercase;
     color: $clr-dark;
-    @include mq(lg){
+
+    @include mq(lg) {
         font-size: 35px;
         line-height: 55px;
     }
-    @include mq(sm){
+
+    @include mq(sm) {
         font-size: 21px;
         line-height: 35px;
     }
 }
 
-h3{
+h3 {
     font-size: 23px;
     line-height: 28px;
     font-weight: 600;
     margin-bottom: 34px;
-    @include mq(md){
+
+    @include mq(md) {
         font-size: 18px;
         line-height: 28px;
         margin-bottom: 20px;
     }
+}
+
+.h_40 {
+    font-size: 40px;
+    line-height: 49px;
+    font-weight: 600;
+    text-transform: capitalize;
+
+    @include mq(lg) {
+        font-size: 30px;
+        line-height: 42px;
+    }
+
+    @include mq(sm) {
+        font-size: 22px;
+        line-height: 30px;
+    }
+}
+
+.sm__text {
+    font-size: 25px;
+    line-height: 30px;
+
+    @include mq(md) {
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+
+.text__xsm {
+    font-size: 17px;
+    line-height: 22px;
+    max-width: 785px;
 }
