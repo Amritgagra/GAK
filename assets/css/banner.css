@@ -4,9 +4,6 @@
   position: relative;
   z-index: 2;
 }
-.banner--md {
-  min-height: 560px;
-}
 .banner::after {
   content: "";
   position: absolute;
@@ -58,3 +55,11 @@
 .banner-info {
   margin-top: 40px;
 }
+.banner--md {
+  min-height: 560px;
+}
+@media screen and (max-width: 992px) {
+  .banner--md {
+    min-height: 75vh;
+  }
+}/*# sourceMappingURL=banner.css.map */

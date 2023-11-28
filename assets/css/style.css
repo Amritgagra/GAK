@@ -10,7 +10,7 @@ body {
 }
 @media screen and (max-width: 992px) {
   body {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 25px;
   }
 }
@@ -94,7 +94,7 @@ h3 {
 }
 @media screen and (max-width: 576px) {
   .h_40 {
-    font-size: 22px;
+    font-size: 18px;
     line-height: 30px;
   }
 }
@@ -105,7 +105,7 @@ h3 {
 }
 @media screen and (max-width: 768px) {
   .sm__text {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
   }
 }
@@ -279,6 +279,10 @@ ul {
 
 .border__bottom--dark {
   border-bottom: 1.5px solid #303030;
+}
+
+.bg__fixed {
+  background-attachment: fixed !important;
 }
 
 .min-h-inherit {
@@ -597,9 +601,13 @@ ul {
   background: transparent;
   border: 0;
 }
+@media screen and (max-width: 768px) {
+  .accordion-item {
+    margin-bottom: 20px;
+  }
+}
 .accordion-item .accordion-button {
   background: transparent;
-  padding: left 0;
   color: #303030;
   font-size: 23px;
   line-height: 60px;
@@ -610,10 +618,10 @@ ul {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 576px) {
   .accordion-item .accordion-button {
-    font-size: 16px;
-    line-height: 48px;
+    font-size: 15px;
+    line-height: 30px;
   }
 }
 .accordion-item .accordion-button:not(.collapsed)::after {
@@ -625,10 +633,22 @@ ul {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
+@media screen and (max-width: 576px) {
+  .accordion-item .accordion-button::after {
+    width: 15px;
+    height: 10px;
+    background-size: contain;
+  }
+}
 .accordion-item .accordion-body {
   border-bottom: 1.5px solid #303030;
   padding: 35px 0 85px 0;
   color: #303030;
+}
+@media screen and (max-width: 768px) {
+  .accordion-item .accordion-body {
+    padding: 15px 0;
+  }
 }
 
 .pb-221 {
@@ -637,6 +657,11 @@ ul {
 
 .offen h2 {
   padding-bottom: 40px;
+}
+@media screen and (max-width: 768px) {
+  .offen h2 {
+    padding-bottom: 10px;
+  }
 }
 
 .vacancies .accordion-item {
@@ -688,6 +713,22 @@ ul {
   padding: 0 20px;
   width: 100%;
 }
+@media screen and (max-width: 1750px) {
+  .custom-container {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .custom-container {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .custom-container {
+    width: 100%;
+    padding: 0 12px;
+  }
+}
 
 .border__top__accent {
   border-top: 1.5px solid #59B270;
@@ -697,9 +738,20 @@ ul {
 .mb-187 {
   margin-bottom: 187px;
 }
+@media screen and (max-width: 768px) {
+  .mb-187 {
+    margin-bottom: 100px;
+  }
+}
 
 .contact-sec h2 {
   margin-bottom: 109px;
+}
+@media screen and (max-width: 576px) {
+  .contact-sec h2 {
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
 }
 .contact-sec .form-control {
   background-color: transparent;
@@ -710,13 +762,14 @@ ul {
   font-size: 20px;
   line-height: 30px;
   border-radius: 0;
-  padding: 44px 25px 0 25px;
+  padding: 44px 25px 10px 25px;
   max-width: 631px;
 }
 @media screen and (max-width: 768px) {
   .contact-sec .form-control {
     font-size: 18px;
     line-height: 24px;
+    padding: 44px 0px 10px 0px;
   }
 }
 @media screen and (max-width: 576px) {
@@ -750,6 +803,11 @@ ul {
 }
 .contact-sec .form-check {
   margin: 56px 25px 60px 25px;
+}
+@media screen and (max-width: 768px) {
+  .contact-sec .form-check {
+    margin: 56px 0px 60px 0px;
+  }
 }
 .contact-sec .form-check-label {
   max-width: 567px;
@@ -794,3 +852,12 @@ ul {
   opacity: 0.33;
   max-width: 760px;
 }
+
+.block-padding {
+  padding-block: 200px;
+}
+@media screen and (max-width: 992px) {
+  .block-padding {
+    padding-block: 100px;
+  }
+}/*# sourceMappingURL=style.css.map */

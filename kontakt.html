@@ -27,7 +27,7 @@
   <body>
     <!-- header start -->
 
-    <header class="header">
+    <header class="header header--active">
       <nav class="navbar navbar-light navbar-expand-lg">
         <div class="container-fluid align-items-stretch">
           <a class="navbar-brand py-0" href="index.html">
@@ -118,7 +118,7 @@
     </header>
     <!-- header end -->
     <main>
-      <section class="resource pb-0 contact-sec">
+      <section class="resource pb-0 contact-sec bg__fixed">
         <div class="custom-container">
           <h2>KONTAKT</h2>
           <div class="row flex-wrap-reverse mb-187">
@@ -156,11 +156,12 @@
                     class="form-control"
                     placeholder="Ihre Nachricht"
                     id="floatingTextarea"
+                    rows="1"
                   ></textarea>
                 </div>
-                <div class="form-check">
+                <div class="form-check d-flex">
                   <input
-                    class="form-check-input"
+                    class="form-check-input col-auto"
                     type="checkbox"
                     value=""
                     id="flexCheckDefault"

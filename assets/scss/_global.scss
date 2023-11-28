@@ -32,10 +32,10 @@ ul {
 }
 
 .block-padding {
-    padding-block: 200px;
+    padding-block: 200px ;
 
     @include mq(lg) {
-        padding-block: 100px;
+        padding-block: 100px ;
     }
 }
 
@@ -103,6 +103,9 @@ ul {
     border-bottom: 1.5px solid $clr-dark;
 }
 
+.bg__fixed {
+    background-attachment: fixed !important;
+}
 
 .min-h-inherit {
     min-height: inherit;
@@ -413,10 +416,12 @@ ul {
 .accordion-item {
     background: transparent;
     border: 0;
+    @include mq(md) {
+      margin-bottom: 20px;
+    }
 
     .accordion-button {
         background: transparent;
-        padding: left 0;
         color: $clr-dark;
         font-size: 23px;
         line-height: 60px;
@@ -426,9 +431,9 @@ ul {
         padding: 0;
         box-shadow: none;
 
-        @include mq(md) {
-            font-size: 16px;
-            line-height: 48px;
+        @include mq(sm) {
+            font-size: 15px;
+            line-height: 30px;
         }
 
         &:not(.collapsed) {
@@ -440,6 +445,11 @@ ul {
         &::after {
             background: url(../images/acc-icon.svg)no-repeat;
             transform: rotate(180deg);
+            @include mq(sm) {
+             width: 15px;
+             height: 10px;
+             background-size: contain;
+            }
         }
 
     }
@@ -448,6 +458,9 @@ ul {
         border-bottom: 1.5px solid $clr-dark;
         padding: 35px 0 85px 0;
         color: $clr-dark;
+        @include mq(md) {
+            padding: 15px 0;
+        }
     }
 }
 
@@ -459,6 +472,9 @@ ul {
 .offen {
     h2 {
         padding-bottom: 40px;
+        @include mq(md) {
+            padding-bottom: 10px;
+        }
     }
 }
 
@@ -523,6 +539,16 @@ ul {
     margin: 0 auto;
     padding: 0 20px;
     width: 100%;
+    @include mq(xxxl) {
+        width: 90%;
+    }
+    @include mq(lg) {
+        width: 95%;
+    }
+    @include mq(sm) {
+        width: 100%;
+        padding: 0 12px;
+    }
 }
 
 .border__top__accent {
@@ -532,11 +558,19 @@ ul {
 
 .mb-187 {
     margin-bottom: 187px;
+    @include mq(md) {
+        margin-bottom: 100px;
+      
+    }
 }
 
 .contact-sec {
     h2 {
         margin-bottom: 109px;
+        @include mq(sm) {
+            margin-bottom: 50px;
+            margin-top: 50px;
+        }
     }
 
     .form-control {
@@ -548,17 +582,19 @@ ul {
         font-size: 20px;
         line-height: 30px;
         border-radius: 0;
-        padding: 44px 25px 0 25px;
+        padding: 44px 25px 10px 25px;
         max-width: 631px;
 
         @include mq(md) {
             font-size: 18px;
             line-height: 24px;
+            padding: 44px 0px 10px 0px;
         }
 
         @include mq(sm) {
             font-size: 16px;
             line-height: 20px;
+          
         }
 
         &::placeholder {
@@ -578,7 +614,10 @@ ul {
 
     .form-check {
         margin: 56px 25px 60px 25px;
-
+        @include mq(md) {
+            margin: 56px 0px 60px 0px;
+          
+        }
 
         &-label {
             max-width: 567px;
@@ -624,5 +663,13 @@ ul {
         top: 0;
         opacity: .33;
         max-width: 760px;
+    }
+}
+
+.block-padding {
+    padding-block: 200px ;
+
+    @include mq(lg) {
+        padding-block: 100px ;
     }
 }

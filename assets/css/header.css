@@ -176,6 +176,7 @@
 @media screen and (max-width: 992px) {
   .header .offcanvas {
     min-height: calc(100vh - 40px);
+    min-height: calc(100svh - 40px);
   }
 }
 .header .offcanvas .btn-close {
@@ -199,4 +200,4 @@
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
-}
+}/*# sourceMappingURL=header.css.map */

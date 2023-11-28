@@ -5,9 +5,7 @@
     background-size: cover;
     position: relative;
     z-index: 2;
-    &--md {
-        min-height: 560px;
-    }
+   
     &::after {
         content: '';
         position: absolute;
@@ -51,6 +49,12 @@
     }
     &-info {
         margin-top: 40px;
+    }
+    &--md {
+        min-height: 560px;
+        @include mq(lg) {
+            min-height:75vh;
+        }
     }
 }
 
