@@ -124,7 +124,7 @@ ul {
     padding-left: 70px;
 
     @include mq(lg) {
-        padding-left: 35px;
+        padding-left: 50px;
     }
 
     @include mq(sm) {
@@ -156,7 +156,7 @@ ul {
     margin-left: 70px;
 
     @include mq(lg) {
-        margin-left: 35px;
+        margin-left: 50px;
     }
 
     @include mq(sm) {
@@ -273,7 +273,7 @@ ul {
     background: url(../images/bg__gradient-top.png) no-repeat center/cover;
 
     @include mq(lg) {
-        padding-block: 250px 150px;
+        padding-block:150px;
     }
 
     @include mq(sm) {
@@ -567,7 +567,7 @@ ul {
 .contact-sec {
     h2 {
         margin-bottom: 109px;
-        @include mq(sm) {
+        @include mq(lg) {
             margin-bottom: 50px;
             margin-top: 50px;
         }
@@ -671,5 +671,44 @@ ul {
 
     @include mq(lg) {
         padding-block: 100px ;
+    }
+}
+textarea {
+    resize: none;
+}
+
+
+.modal {
+    &-content {
+        background-color: $clr-accent-light;
+        padding: 20px 10px 40px;
+    }
+
+
+    &-header {
+        .btn-close {
+            &:focus {
+                box-shadow: none;
+            }
+        }
+    }
+&-footer{
+    justify-content: flex-start;
+    @include mq(sm) {
+        padding: 0;
+        .btn__outline-dark {
+         width: 100%;
+         margin: 0;
+        }
+    }
+}
+    .form-check {
+        margin: 44px 25px 44px 25px;
+        @include mq(lg) {
+            margin: 44px 0 44px 0;
+        }
+        &-input {
+            flex: 0 0 auto;
+        }
     }
 }

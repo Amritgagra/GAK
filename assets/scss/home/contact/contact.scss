@@ -6,7 +6,12 @@
     lottie-player {
         @include mq(lg) {
             width: 100% !important;
-            height: 100% !important;
+            height: 400px !important;
+        }
+    }
+    .pb-150 {
+        @include mq(lg) { 
+            padding-bottom: 20px;
         }
     }
 }

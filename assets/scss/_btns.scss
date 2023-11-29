@@ -14,6 +14,9 @@
     transition: all .5s ease;
     overflow: hidden;
     display: inline-flex;
+    @include mq(sm) { 
+        padding: 9px 30px 9px 57px;
+    }
     span {
         transition: transform .5s ease;
     }
@@ -52,4 +55,6 @@
 .btn__outline-dark {
     border:2px solid $clr-dark;
     color: $clr-dark;
+    position: relative;
+    z-index: 1;
 }

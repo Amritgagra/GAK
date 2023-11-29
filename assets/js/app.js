@@ -18,7 +18,7 @@ gsap.timeline({
     scrollTrigger:{
       trigger: '.resource',
       scrub:.3,
-      start:"top 20%",
+      start:"top 25%",
       end:"50% 20%",
     }
  })

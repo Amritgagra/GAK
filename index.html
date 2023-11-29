@@ -562,7 +562,7 @@
                   Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                   diam nonumy eirmod tempor.
                 </p>
-                <a href="#" class="btn__outline-dark">jetzt Kontaktieren</a>
+                <a href="#" class="btn__outline-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">jetzt Kontaktieren</a>
               </div>
             </div>
             <div class="col-lg-6 d-lg-flex justify-content-lg-end">
@@ -635,6 +635,62 @@
         </div>
       </div>
     </footer>
+    <!-- footer end -->
+         <!-- modal-start -->
+         <div class="modal fade" id="exampleModalToggle" aria-hidden="true"
+         aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+         
+         <div class="modal-dialog modal-lg modal-dialog-centered">
+             <div class="modal-content rounded-4 border-0">
+                 <div class="modal-header border-0">
+                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                 </div>
+                 <div class="modal-body p-0">
+                     <div class="pb-0  pt-0 contact-sec  rounded-4 text-center">
+                         <div class="container">
+                             <h2 class="modal-title  mb-0 mt-0" id="exampleModalToggleLabel">KONTAKT</h2>
+                             <div class="row ">
+                                 <div class="col-12">
+                                     <form class="d-inline-block">
+                                         <div>
+                                             <input type="text" name="Name" placeholder="Name" id="name1"
+                                                 class="form-control" />
+                                         </div>
+                                         <div>
+                                             <input type="tel" name="Telefon" id="num" class="form-control"
+                                                 placeholder="Telefon" />
+                                         </div>
+                                         <div>
+                                             <input type="email" name="E-Mail" id="mail" class="form-control"
+                                                 placeholder="E-Mail" />
+                                         </div>
+                                         <div>
+                                             <textarea class="form-control" placeholder="Ihre Nachricht"
+                                                 id="floatingTextarea" rows="1"></textarea>
+                                         </div>
+                                         <div class="form-check d-flex">
+                                             <input class="form-check-input " type="checkbox" value=""
+                                                 id="flexCheckDefault" />
+                                             <label class="form-check-label text-start" for="flexCheckDefault">
+                                                 Ja, ich habe die Datenschutzerklärung gelesen und bin damit
+                                                 einverstanden.*
+                                             </label>
+                                         </div>
+                                         <div class="modal-footer border-0">
+                                             <button type="submit" class="btn__outline-dark">
+                                                 jetzt Kontaktieren
+                                             </button>
+                                         </div>
+                                     </form>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+     <!-- modal-ends -->
     <!-- Bootstrap JavaScript Libraries -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"

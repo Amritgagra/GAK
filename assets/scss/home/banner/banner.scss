@@ -45,7 +45,7 @@
         padding-bottom: 42px;
     }
     @include mq(lg) {
-        min-height: 100vh;
+        min-height: 70vh;
     }
     &-info {
         margin-top: 40px;
@@ -53,7 +53,7 @@
     &--md {
         min-height: 560px;
         @include mq(lg) {
-            min-height:75vh;
+            min-height:70vh;
         }
     }
 }
