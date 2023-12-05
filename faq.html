@@ -58,6 +58,11 @@
             aria-labelledby="offcanvasNavbarLabel"
           >
             <div class="offcanvas-header">
+              <img
+                src="assets/images/logo-dark.svg"
+                alt=""
+                class="site-logo mobile--logo"
+              />
               <button
                 type="button"
                 class="btn-close text-reset"
@@ -110,7 +115,14 @@
                     <a class="dropdown-item" href="#">DE</a>
                   </div>
                 </li>
+                <a href="#" class="btn__outline-dark d-lg-none"
+                  ><span>jetzt Kontaktieren</span></a
+                >
               </ul>
+              <div class="d-lg-none d-flex align-items-center gap-3">
+                <a href="#" class="link__dark">Impressum</a>
+                <a href="#" class="link__dark">Datenschutz</a>
+              </div>
             </div>
           </div>
         </div>
@@ -128,12 +140,7 @@
                   <div
                     class="banner-info d-flex gap-3 justify-content-between align-items-end"
                   >
-                    <!-- <div class="d-none d-lg-block">
-                            <a href="#scroll">
-                              <img src="assets/images/scroll__img.svg" alt="">
-                            </a>
-                          </div> -->
-                    <div class="flex-grow-1 ps-lg-4 ">
+                    <div class="flex-grow-1 ps-lg-4">
                       <div
                         class="d-flex justify-content-between gap-3 align-items-lg-end border__bottom flex-column flex-lg-row ms-70"
                       >
@@ -173,7 +180,10 @@
       <!-- banner section end -->
 
       <!--  resource section start -->
-      <section class="resource position-relative block-padding bg__fixed pb-0" id="scroll">
+      <section
+        class="resource position-relative block-padding bg__after pb-0"
+        id="scroll"
+      >
         <div class="d-none d-lg-block scoll__side">
           <a href="#scroll">
             <img src="assets/images/scroll__img.svg" alt="" />

@@ -7,13 +7,6 @@
     }
 }
 
-// .container-fluid {
-//     padding: 0 15px;
-//     @include mq(sm) {
-//         padding: 0 12px;
-//     }
-// }
-
 a {
     text-decoration: none;
 }
@@ -103,9 +96,6 @@ ul {
     border-bottom: 1.5px solid $clr-dark;
 }
 
-.bg__fixed {
-    background-attachment: fixed !important;
-}
 
 .min-h-inherit {
     min-height: inherit;
@@ -196,8 +186,15 @@ ul {
     }
 }
 
-.pb-115 {
-    padding-bottom: 115px;
+.pb-120 {
+    padding-bottom: 120px;
+    @include mq(md) {
+        padding-bottom: 80px;
+    }
+
+    @include mq(sm) {
+        padding-bottom: 50px;
+    }
 }
 
 .pb-150 {
@@ -242,11 +239,11 @@ ul {
 
 .cap__icon {
     .cap-icon-top {
-        transition: transform .3s ease-in-out;
+        transition: transform .1s ease-in-out;
     }
 
     &:hover .cap-icon-top {
-        transform: translate(42.135px, 29.454px) rotate(180deg);
+        transform: translate(41.70px, 29.454px) rotate(180deg);
     }
 }
 
@@ -281,6 +278,14 @@ ul {
     }
 
     &__text {
+        color: rgba($color: $clr-black, $alpha: .2);
+        line-height: 73px;
+        @include mq(lg) {
+            line-height: 55px;
+        }
+        @include mq(sm) {
+            line-height: 35px;
+        }
         div {
             position: relative;
             display: inline-block;
@@ -289,7 +294,7 @@ ul {
                 position: absolute;
                 width: 0;
                 height: 100%;
-                color: $clr-accent;
+                color: $clr-black;
                 left: 0;
                 overflow: hidden;
                 text-align: center;
@@ -318,6 +323,9 @@ ul {
         @include mq(lg) {
             margin-bottom: 30px;
             gap: 10px;
+        }
+        @include mq(sm) {
+            gap: 6px;
         }
 
         .nav-item {
@@ -357,6 +365,7 @@ ul {
                 padding-inline: 0;
                 text-wrap: nowrap;
                 width: 100%;
+                font-size: 14px;
             }
 
             &.active {
@@ -425,7 +434,7 @@ ul {
         color: $clr-dark;
         font-size: 23px;
         line-height: 60px;
-        font-weight: 500;
+        font-weight: 600;
         border-bottom: 1.5px solid $clr-dark;
         border-radius: 0 !important;
         padding: 0;
@@ -615,8 +624,7 @@ ul {
     .form-check {
         margin: 56px 25px 60px 25px;
         @include mq(md) {
-            margin: 56px 0px 60px 0px;
-          
+            margin: 56px 0px 60px 0px; 
         }
 
         &-label {
@@ -629,7 +637,7 @@ ul {
             }
 
             @include mq(sm) {
-                font-size: 16px;
+                font-size: 13px;
                 line-height: 20px;
             }
 
@@ -641,7 +649,11 @@ ul {
             width: 24px;
             height: 24px;
             margin-right: 20px;
-
+            @include mq(md) {
+                width: 16px;
+                height: 16px;
+            }
+    
             &:focus {
                 box-shadow: none;
             }
@@ -676,15 +688,31 @@ ul {
 textarea {
     resize: none;
 }
-
+.modal-backdrop {
+    background-color: transparent;
+ }
 
 .modal {
+    .modal__form {
+        padding-left: 20px;
+        @include mq(sm) {
+            padding-left: 0px;
+        }
+    }
     &-content {
-        background-color: $clr-accent-light;
+        backdrop-filter:blur(10px);
+        background: rgba( 255, 255, 255, 0.25 );
         padding: 20px 10px 40px;
     }
+  
 
+    .form-control {
+        padding: 30px 25px 10px 25px;
+        padding-left:0 ;
+    }
+   
 
+  
     &-header {
         .btn-close {
             &:focus {
@@ -697,18 +725,24 @@ textarea {
     @include mq(sm) {
         padding: 0;
         .btn__outline-dark {
-         width: 100%;
          margin: 0;
         }
     }
 }
     .form-check {
-        margin: 44px 25px 44px 25px;
-        @include mq(lg) {
-            margin: 44px 0 44px 0;
+        margin: 30px 0px;
+        @include mq(sm) { 
+            margin: 20px 0px ;
         }
         &-input {
             flex: 0 0 auto;
         }
+    }
+}
+
+@media screen and (min-width:576px) {
+    .modal-dialog {
+        margin-right: 20px;
+        margin-left: auto;
     }
 }

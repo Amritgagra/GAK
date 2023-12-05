@@ -47,7 +47,7 @@ h1 {
 
 h2 {
   font-size: 45px;
-  line-height: 73px;
+  line-height: 55px;
   font-weight: 600;
   margin-bottom: 40px;
   text-transform: uppercase;
@@ -289,10 +289,6 @@ ul {
   border-bottom: 1.5px solid #303030;
 }
 
-.bg__fixed {
-  background-attachment: fixed !important;
-}
-
 .min-h-inherit {
   min-height: inherit;
 }
@@ -392,8 +388,18 @@ ul {
   }
 }
 
-.pb-115 {
-  padding-bottom: 115px;
+.pb-120 {
+  padding-bottom: 120px;
+}
+@media screen and (max-width: 768px) {
+  .pb-120 {
+    padding-bottom: 80px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .pb-120 {
+    padding-bottom: 50px;
+  }
 }
 
 .pb-150 {
@@ -438,14 +444,14 @@ ul {
 }
 
 .cap__icon .cap-icon-top {
-  -webkit-transition: -webkit-transform 0.3s ease-in-out;
-  transition: -webkit-transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.1s ease-in-out;
+  transition: -webkit-transform 0.1s ease-in-out;
+  transition: transform 0.1s ease-in-out;
+  transition: transform 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
 }
 .cap__icon:hover .cap-icon-top {
-  -webkit-transform: translate(42.135px, 29.454px) rotate(180deg);
-          transform: translate(42.135px, 29.454px) rotate(180deg);
+  -webkit-transform: translate(41.7px, 29.454px) rotate(180deg);
+          transform: translate(41.7px, 29.454px) rotate(180deg);
 }
 
 .link__dark {
@@ -478,6 +484,20 @@ ul {
     padding-block: 100px;
   }
 }
+.resource__text {
+  color: rgba(0, 0, 0, 0.2);
+  line-height: 73px;
+}
+@media screen and (max-width: 992px) {
+  .resource__text {
+    line-height: 55px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .resource__text {
+    line-height: 35px;
+  }
+}
 .resource__text div {
   position: relative;
   display: inline-block;
@@ -486,7 +506,7 @@ ul {
   position: absolute;
   width: 0;
   height: 100%;
-  color: #59B270;
+  color: #000;
   left: 0;
   overflow: hidden;
   text-align: center;
@@ -510,6 +530,11 @@ ul {
   .feature .nav-tabs {
     margin-bottom: 30px;
     gap: 10px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .feature .nav-tabs {
+    gap: 6px;
   }
 }
 @media screen and (max-width: 1400px) {
@@ -556,6 +581,7 @@ ul {
     padding-inline: 0;
     text-wrap: nowrap;
     width: 100%;
+    font-size: 14px;
   }
 }
 .feature .nav-tabs .nav-link.active {
@@ -619,7 +645,7 @@ ul {
   color: #303030;
   font-size: 23px;
   line-height: 60px;
-  font-weight: 500;
+  font-weight: 600;
   border-bottom: 1.5px solid #303030;
   border-radius: 0 !important;
   padding: 0;
@@ -829,7 +855,7 @@ ul {
 }
 @media screen and (max-width: 576px) {
   .contact-sec .form-check-label {
-    font-size: 16px;
+    font-size: 13px;
     line-height: 20px;
   }
 }
@@ -839,6 +865,12 @@ ul {
   width: 24px;
   height: 24px;
   margin-right: 20px;
+}
+@media screen and (max-width: 768px) {
+  .contact-sec .form-check-input {
+    width: 16px;
+    height: 16px;
+  }
 }
 .contact-sec .form-check-input:focus {
   -webkit-box-shadow: none;
@@ -874,9 +906,27 @@ textarea {
   resize: none;
 }
 
+.modal-backdrop {
+  background-color: transparent;
+}
+
+.modal .modal__form {
+  padding-left: 20px;
+}
+@media screen and (max-width: 576px) {
+  .modal .modal__form {
+    padding-left: 0px;
+  }
+}
 .modal-content {
-  background-color: #F3F9E1;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.25);
   padding: 20px 10px 40px;
+}
+.modal .form-control {
+  padding: 30px 25px 10px 25px;
+  padding-left: 0;
 }
 .modal-header .btn-close:focus {
   -webkit-box-shadow: none;
@@ -892,20 +942,26 @@ textarea {
     padding: 0;
   }
   .modal-footer .btn__outline-dark {
-    width: 100%;
     margin: 0;
   }
 }
 .modal .form-check {
-  margin: 44px 25px 44px 25px;
+  margin: 30px 0px;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 576px) {
   .modal .form-check {
-    margin: 44px 0 44px 0;
+    margin: 20px 0px;
   }
 }
 .modal .form-check-input {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
+}
+
+@media screen and (min-width: 576px) {
+  .modal-dialog {
+    margin-right: 20px;
+    margin-left: auto;
+  }
 }/*# sourceMappingURL=style.css.map */
